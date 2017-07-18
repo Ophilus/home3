@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Соцопитування</title>
+</head>
+<body>
+    <a href="table.html">Посилання на табличку з списком</a>  
+    <h1>Соцопитування </h1>
+    <form action="https://formspree.io/grynvadim@gmail.com" method="POST">
+        <label>Ім'я:<input type="text" name="Ім'я" placeholder="Іван"  required><br></label>
+        <label>Прізвище:<input type="text" name="Прізвище" placeholder="Іванов" required><br></label>
+        <label>Е-мейл:<input type="email" name="Е-мейл" placeholder="example@gmail.com" pattern="[a-zA-Z0-9_.\-]+[@]{1}[a-zA-Z]+.{1}[a-zA-Z]*[\.]{0,1}[a-zA-Z]{0,3}[\.]{0,1}[a-zA-Z_]{0,3}" required><br></label>
+        <br>
+        <label>
+            Чи слухаєте ви музику?<br>
+            <label><input type="radio" name="Слухаєте музику?" value="Так">Так</label><br>
+            <label><input type="radio" name="Слухаєте музику?" value="Ні">Ні</label><br>
+        </label>
+        <label>
+            Якій музиці ви надаєте  перевагу?<br>
+            <label><input type="checkbox" name="Музичні жанри" value="Поп">Поп</label><br>
+            <label><input type="checkbox" name="Музичні жанри" value="Діско">Діско</label><br>
+            <label><input type="checkbox" name="Музичні жанри" value="Рок">Рок</label><br>
+            <label><input type="checkbox" name="Музичні жанри" value="Хард-рок">Хард-рок</label><br>
+            <label><input type="checkbox" name="Музичні жанри" value="Реп">Реп</label><br>
+            <label><input type="checkbox" >Свій варіант:<input type="text" name="Музичні жанри"></label><br>
+        </label>
+        <label>
+            Приклад пісні яка вам подобається:<br>
+            <input type="file" name="Пісня">
+            <br>
+        </label>
+        <input type="hidden" name="Вітаю з пройденим соцопитуванням">
+            
+        </head>
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+    </form>
+  
+</body>
+</html>
